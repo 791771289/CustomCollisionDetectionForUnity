@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 23694767501781838}
   - component: {fileID: 114283294429296826}
   - component: {fileID: 114822222323361838}
+  - component: {fileID: 122131433801764462}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Player
@@ -113,3 +114,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   rotationSpeed: 130
+--- !u!122 &122131433801764462
+Halo:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1348928207915494}
+  m_Enabled: 1
+  m_Color:
+    serializedVersion: 2
+    rgba: 4286611584
+  m_Size: 5
