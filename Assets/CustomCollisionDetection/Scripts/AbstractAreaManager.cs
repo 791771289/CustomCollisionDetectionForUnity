@@ -68,7 +68,7 @@ namespace navid021.CustomCollisionDetection
         }
         
         protected AreaBound bound;
-        public Action<object> eventAction;
+        public event Action<object> eventAction;
 
         public void FindTargetPlayer()
         {
@@ -103,7 +103,7 @@ namespace navid021.CustomCollisionDetection
             }
 
             if (bound.OverLaps(TargetPosition, TargetSizeDelta)) {
-                Overlap(eventAction);
+                OnOverlap(eventAction);
 
                 if(useAutoCallBack) {
                     Action<object> action = eventAction;
@@ -114,7 +114,7 @@ namespace navid021.CustomCollisionDetection
             }
         }
 
-        protected abstract void Overlap(Action<object> action);
+        protected abstract void OnOverlap(Action<object> action);
 
         protected virtual void OnDrawGizmos()
         {

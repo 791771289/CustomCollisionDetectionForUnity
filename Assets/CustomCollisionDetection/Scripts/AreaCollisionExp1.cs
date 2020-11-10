@@ -8,7 +8,7 @@ public class AreaCollisionExp1 : AbstractAreaManager
     [Header("New Other")]
     public int numberInt = 1;
 
-    protected override void Overlap(Action<object> action)
+    protected override void OnOverlap(Action<object> action)
     {
         Action<object> act = action;
         if (act != null) {
